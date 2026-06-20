@@ -1,0 +1,794 @@
+{
+  "69ac519839d15e3196551ec7": {
+    "QuestName": "Interchangium Arcadium",
+    "_id": "69ac519839d15e3196551ec7",
+    "traderId": "5a7c2eca46aef81a7ca2145d",
+    "type": "PickUp",
+    "location": "5714dbc024597771384a510d",
+    "image": "/files/quest/icon/5968ec2986f7741ddf17db83.jpg",
+    "acceptanceAndFinishingSource": "eft",
+    "arenaLocations": [],
+    "instantComplete": false,
+    "isKey": false,
+    "secretQuest": false,
+    "gameModes": [],
+    "progressSource": "eft",
+    "rankingModes": [],
+    "side": "Pmc",
+    "sideExclusive": "Pmc",
+    "description": "69ac519839d15e3196551ec7 description",
+    "startedMessageText": "69ac519839d15e3196551ec7 startedMessageText",
+    "successMessageText": "69ac519839d15e3196551ec7 successMessageText",
+    "failMessageText": "69ac519839d15e3196551ec7 failMessageText",
+    "acceptPlayerMessage": "69ac519839d15e3196551ec7 acceptPlayerMessage",
+    "declinePlayerMessage": "69ac519839d15e3196551ec7 declinePlayerMessage",
+    "completePlayerMessage": "69ac519839d15e3196551ec7 completePlayerMessage",
+    "changeQuestMessageText": "69ac519839d15e3196551ec7 changeQuestMessageText",
+    "name": "69ac519839d15e3196551ec7 name",
+    "note": "69ac519839d15e3196551ec7 note",
+    "restartable": false,
+    "canShowNotificationsInGame": true,
+    "status": 0,
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Salvage",
+                "dogtagLevel": 0,
+                "dynamicLocale": false,
+                "globalQuestCounterId": "",
+                "id": "69ae0c8e82a9a4823651f520",
+                "index": 3,
+                "isEncoded": false,
+                "maxDurability": 100,
+                "minDurability": 0,
+                "onlyFoundInRaid": false,
+                "parentId": "",
+                "plantTime": 10,
+                "target": [
+                  "590c2e1186f77425357b6124"
+                ],
+                "value": 1,
+                "visibilityConditions": [],
+                "zoneId": "doom_machine_1"
+              },
+              {
+                "conditionType": "LeaveItemAtLocation",
+                "dogtagLevel": 0,
+                "dynamicLocale": false,
+                "id": "6a0506ed519727382c36084b",
+                "isEncoded": false,
+                "maxDurability": 100,
+                "minDurability": 0,
+                "onlyFoundInRaid": true,
+                "target": [
+                  "69d446192add7ebebf13f92f"
+                ],
+                "value": 1,
+                "zoneId": "doom_parts_dropoff_1",
+                "globalQuestCounterId": "",
+                "index": 4,
+                "parentId": "",
+                "plantTime": 15,
+                "visibilityConditions": []
+              }
+            ],
+            "id": "6a05070957f6bfff77292afc"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "6a050718b79a994add4fba60",
+          "index": 0,
+          "isNecessary": true,
+          "isResetOnConditionFailed": true,
+          "oneSessionOnly": true,
+          "parentId": "",
+          "type": "Completion",
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "conditionType": "Block",
+          "dynamicLocale": false,
+          "id": "69adbc9ea7966d8cfb51f51d",
+          "index": 0,
+          "parentId": "",
+          "status": [],
+          "target": "",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "availableInGameEditions": [],
+          "id": "69ac51b1af74c387e2551eca",
+          "index": 0,
+          "type": "Experience",
+          "value": "7600",
+          "unknown": false
+        },
+        {
+          "availableInGameEditions": [],
+          "id": "69ac51b2c10b368e5a551ecb",
+          "index": 1,
+          "target": "5a7c2eca46aef81a7ca2145d",
+          "type": "TraderStanding",
+          "value": "0.03",
+          "unknown": false
+        }
+      ]
+    }
+  },
+  "69ac51b848f2a2745c551ecc": {
+    "QuestName": "Reboot Sequence",
+    "_id": "69ac51b848f2a2745c551ecc",
+    "traderId": "5a7c2eca46aef81a7ca2145d",
+    "type": "PickUp",
+    "location": "5714dbc024597771384a510d",
+    "image": "/files/quest/icon/5968ec2986f7741ddf17db83.jpg",
+    "acceptanceAndFinishingSource": "eft",
+    "arenaLocations": [],
+    "instantComplete": false,
+    "isKey": false,
+    "secretQuest": false,
+    "gameModes": [],
+    "progressSource": "eft",
+    "rankingModes": [],
+    "side": "Pmc",
+    "sideExclusive": "Pmc",
+    "description": "69ac51b848f2a2745c551ecc description",
+    "startedMessageText": "69ac51b848f2a2745c551ecc startedMessageText",
+    "successMessageText": "69ac51b848f2a2745c551ecc successMessageText",
+    "failMessageText": "69ac51b848f2a2745c551ecc failMessageText",
+    "acceptPlayerMessage": "69ac51b848f2a2745c551ecc acceptPlayerMessage",
+    "declinePlayerMessage": "69ac51b848f2a2745c551ecc declinePlayerMessage",
+    "completePlayerMessage": "69ac51b848f2a2745c551ecc completePlayerMessage",
+    "changeQuestMessageText": "69ac51b848f2a2745c551ecc changeQuestMessageText",
+    "name": "69ac51b848f2a2745c551ecc name",
+    "note": "69ac51b848f2a2745c551ecc note",
+    "restartable": false,
+    "canShowNotificationsInGame": true,
+    "status": 0,
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Salvage",
+                "dogtagLevel": 0,
+                "dynamicLocale": false,
+                "globalQuestCounterId": "",
+                "id": "69bd6478449b9ae515d93f9d",
+                "index": 0,
+                "isEncoded": false,
+                "maxDurability": 100,
+                "minDurability": 0,
+                "onlyFoundInRaid": false,
+                "parentId": "",
+                "plantTime": 10,
+                "target": [
+                  "590c2e1186f77425357b6124"
+                ],
+                "value": 1,
+                "visibilityConditions": [],
+                "zoneId": "doom_machine_2"
+              },
+              {
+                "conditionType": "LeaveItemAtLocation",
+                "dogtagLevel": 0,
+                "dynamicLocale": false,
+                "globalQuestCounterId": "",
+                "id": "6a32fed673aae278d3c2799e",
+                "index": 1,
+                "isEncoded": false,
+                "maxDurability": 100,
+                "minDurability": 0,
+                "onlyFoundInRaid": true,
+                "parentId": "",
+                "plantTime": 15,
+                "target": [
+                  "69d446ec4c8a6357f213f931"
+                ],
+                "value": 1,
+                "visibilityConditions": [],
+                "zoneId": "doom_parts_dropoff_2"
+              }
+            ],
+            "id": "6a32feee33b0f47ab784052e"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "6a32fef733dd52c8b3e32590",
+          "index": 0,
+          "isNecessary": true,
+          "isResetOnConditionFailed": true,
+          "oneSessionOnly": true,
+          "parentId": "",
+          "type": "Completion",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Salvage",
+                "dogtagLevel": 0,
+                "dynamicLocale": false,
+                "globalQuestCounterId": "",
+                "id": "69bd64ac4510eec79cd93f9e",
+                "index": 1,
+                "isEncoded": false,
+                "maxDurability": 100,
+                "minDurability": 0,
+                "onlyFoundInRaid": false,
+                "parentId": "",
+                "plantTime": 10,
+                "target": [
+                  "590c2e1186f77425357b6124"
+                ],
+                "value": 1,
+                "visibilityConditions": [],
+                "zoneId": "doom_machine_3"
+              },
+              {
+                "conditionType": "LeaveItemAtLocation",
+                "dogtagLevel": 0,
+                "dynamicLocale": false,
+                "globalQuestCounterId": "",
+                "id": "6a32fefe07ac119cce5e8e80",
+                "index": 2,
+                "isEncoded": false,
+                "maxDurability": 100,
+                "minDurability": 0,
+                "onlyFoundInRaid": true,
+                "parentId": "",
+                "plantTime": 15,
+                "target": [
+                  "69d4460dbea349d22013f92e"
+                ],
+                "value": 1,
+                "visibilityConditions": [],
+                "zoneId": "doom_parts_dropoff_3"
+              }
+            ],
+            "id": "6a32ff05771c3beb14c8ed6f"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "6a32ff052ada360cff2cd825",
+          "index": 1,
+          "isNecessary": true,
+          "isResetOnConditionFailed": true,
+          "oneSessionOnly": true,
+          "parentId": "",
+          "type": "Completion",
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "69ac51c59eac241d3d551ecd",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "69ac519839d15e3196551ec7",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "availableInGameEditions": [],
+          "id": "69ac51d7766764de5b551ed1",
+          "index": 0,
+          "type": "Experience",
+          "value": "11000",
+          "unknown": false
+        },
+        {
+          "availableInGameEditions": [],
+          "id": "69ac51d9c905648a44551ed2",
+          "index": 1,
+          "target": "5a7c2eca46aef81a7ca2145d",
+          "type": "TraderStanding",
+          "value": "0.04",
+          "unknown": false
+        },
+        {
+          "availableInGameEditions": [],
+          "findInRaid": true,
+          "id": "69ac51da00bd7d2b4d551ed3",
+          "index": 2,
+          "items": [
+            {
+              "_id": "69ad839b602b7e492251f514",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 40000
+              }
+            }
+          ],
+          "target": "69ad839b602b7e492251f514",
+          "type": "Item",
+          "value": "40000",
+          "unknown": false
+        }
+      ]
+    }
+  },
+  "69ac51e30d558014f5551ed5": {
+    "QuestName": "Player 1 Ready",
+    "_id": "69ac51e30d558014f5551ed5",
+    "traderId": "5a7c2eca46aef81a7ca2145d",
+    "type": "PickUp",
+    "location": "any",
+    "image": "/files/quest/icon/5968ec2986f7741ddf17db83.jpg",
+    "acceptanceAndFinishingSource": "eft",
+    "arenaLocations": [],
+    "instantComplete": false,
+    "isKey": false,
+    "secretQuest": false,
+    "gameModes": [],
+    "progressSource": "eft",
+    "rankingModes": [],
+    "side": "Pmc",
+    "sideExclusive": "Pmc",
+    "description": "69ac51e30d558014f5551ed5 description",
+    "startedMessageText": "69ac51e30d558014f5551ed5 startedMessageText",
+    "successMessageText": "69ac51e30d558014f5551ed5 successMessageText",
+    "failMessageText": "69ac51e30d558014f5551ed5 failMessageText",
+    "acceptPlayerMessage": "69ac51e30d558014f5551ed5 acceptPlayerMessage",
+    "declinePlayerMessage": "69ac51e30d558014f5551ed5 declinePlayerMessage",
+    "completePlayerMessage": "69ac51e30d558014f5551ed5 completePlayerMessage",
+    "changeQuestMessageText": "69ac51e30d558014f5551ed5 changeQuestMessageText",
+    "name": "69ac51e30d558014f5551ed5 name",
+    "note": "69ac51e30d558014f5551ed5 note",
+    "restartable": false,
+    "canShowNotificationsInGame": true,
+    "status": 0,
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "69ad83bed4e2e313bb51f516",
+          "index": 0,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": true,
+          "parentId": "",
+          "target": [
+            "5d1b2fa286f77425227d1674"
+          ],
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "69ad83ef9c833bf8ae51f518",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": true,
+          "parentId": "",
+          "target": [
+            "6389c70ca33d8c4cdf4932c6"
+          ],
+          "value": 3,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "69ad83eca21ee0a2ce51f517",
+          "index": 2,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": true,
+          "parentId": "",
+          "target": [
+            "573477e124597737dd42e191"
+          ],
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "69ad83bc8b782db77c51f515",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "69ac51b848f2a2745c551ecc",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "availableInGameEditions": [],
+          "id": "69ad83f4a2744e16fe51f519",
+          "index": 0,
+          "type": "Experience",
+          "value": "5000",
+          "unknown": false
+        },
+        {
+          "availableInGameEditions": [],
+          "id": "69ad83f53e6770a0e151f51a",
+          "index": 1,
+          "target": "5a7c2eca46aef81a7ca2145d",
+          "type": "TraderStanding",
+          "value": "0.02",
+          "unknown": false
+        }
+      ]
+    }
+  },
+  "69dee8720d337cf6aa05b917": {
+    "QuestName": "Oh... That one's not for you.",
+    "_id": "69dee8720d337cf6aa05b917",
+    "traderId": "5a7c2eca46aef81a7ca2145d",
+    "type": "PickUp",
+    "location": "5714dbc024597771384a510d",
+    "image": "/files/quest/icon/5968ec2986f7741ddf17db83.jpg",
+    "acceptanceAndFinishingSource": "eft",
+    "arenaLocations": [],
+    "instantComplete": false,
+    "isKey": false,
+    "secretQuest": false,
+    "gameModes": [],
+    "progressSource": "eft",
+    "rankingModes": [],
+    "side": "Pmc",
+    "sideExclusive": "Pmc",
+    "description": "69dee8720d337cf6aa05b917 description",
+    "startedMessageText": "69dee8720d337cf6aa05b917 startedMessageText",
+    "successMessageText": "69dee8720d337cf6aa05b917 successMessageText",
+    "failMessageText": "69dee8720d337cf6aa05b917 failMessageText",
+    "acceptPlayerMessage": "69dee8720d337cf6aa05b917 acceptPlayerMessage",
+    "declinePlayerMessage": "69dee8720d337cf6aa05b917 declinePlayerMessage",
+    "completePlayerMessage": "69dee8720d337cf6aa05b917 completePlayerMessage",
+    "changeQuestMessageText": "69dee8720d337cf6aa05b917 changeQuestMessageText",
+    "name": "69dee8720d337cf6aa05b917 name",
+    "note": "69dee8720d337cf6aa05b917 note",
+    "restartable": false,
+    "canShowNotificationsInGame": true,
+    "status": 0,
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Salvage",
+                "dogtagLevel": 0,
+                "dynamicLocale": false,
+                "globalQuestCounterId": "",
+                "id": "69dee893ba407952d305b919",
+                "index": 3,
+                "isEncoded": false,
+                "maxDurability": 100,
+                "minDurability": 0,
+                "onlyFoundInRaid": false,
+                "parentId": "",
+                "plantTime": 10,
+                "target": [
+                  "590c2e1186f77425357b6124"
+                ],
+                "value": 1,
+                "visibilityConditions": [],
+                "zoneId": "doom_machine_4"
+              },
+              {
+                "conditionType": "LeaveItemAtLocation",
+                "dogtagLevel": 0,
+                "dynamicLocale": false,
+                "globalQuestCounterId": "",
+                "id": "6a32fdc3d43f157294d38548",
+                "index": 4,
+                "isEncoded": false,
+                "maxDurability": 100,
+                "minDurability": 0,
+                "onlyFoundInRaid": true,
+                "parentId": "",
+                "plantTime": 15,
+                "target": [
+                  "69d446192add7ebebf13f92f"
+                ],
+                "value": 1,
+                "visibilityConditions": [],
+                "zoneId": "doom_parts_dropoff_4"
+              }
+            ],
+            "id": "6a32fdcebecf1b3067a5fbb6"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "6a32fdcfe9adb3f4358f3d72",
+          "index": 0,
+          "isNecessary": true,
+          "isResetOnConditionFailed": true,
+          "oneSessionOnly": true,
+          "parentId": "",
+          "type": "Completion",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Salvage",
+                "dogtagLevel": 0,
+                "dynamicLocale": false,
+                "globalQuestCounterId": "",
+                "id": "69dee896fae82b6bc005b91a",
+                "index": 4,
+                "isEncoded": false,
+                "maxDurability": 100,
+                "minDurability": 0,
+                "onlyFoundInRaid": false,
+                "parentId": "",
+                "plantTime": 10,
+                "target": [
+                  "590c2e1186f77425357b6124"
+                ],
+                "value": 1,
+                "visibilityConditions": [],
+                "zoneId": "doom_machine_5"
+              },
+              {
+                "conditionType": "LeaveItemAtLocation",
+                "dogtagLevel": 0,
+                "dynamicLocale": false,
+                "globalQuestCounterId": "",
+                "id": "6a32fdda8c7d08790e4d2450",
+                "index": 5,
+                "isEncoded": false,
+                "maxDurability": 100,
+                "minDurability": 0,
+                "onlyFoundInRaid": true,
+                "parentId": "",
+                "plantTime": 15,
+                "target": [
+                  "69d446ec4c8a6357f213f931"
+                ],
+                "value": 1,
+                "visibilityConditions": [],
+                "zoneId": "doom_parts_dropoff_5"
+              }
+            ],
+            "id": "6a32fde1d178d417d241b34c"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "6a32fde327fc02ee211f2d7f",
+          "index": 1,
+          "isNecessary": true,
+          "isResetOnConditionFailed": true,
+          "oneSessionOnly": true,
+          "parentId": "",
+          "type": "Completion",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Salvage",
+                "dogtagLevel": 0,
+                "dynamicLocale": false,
+                "globalQuestCounterId": "",
+                "id": "69ffabbca4ec51ac11f88ad2",
+                "index": 7,
+                "isEncoded": false,
+                "maxDurability": 100,
+                "minDurability": 0,
+                "onlyFoundInRaid": false,
+                "parentId": "",
+                "plantTime": 10,
+                "target": [
+                  "590c2e1186f77425357b6124"
+                ],
+                "value": 1,
+                "visibilityConditions": [],
+                "zoneId": "doom_machine_6"
+              },
+              {
+                "conditionType": "LeaveItemAtLocation",
+                "dogtagLevel": 0,
+                "dynamicLocale": false,
+                "globalQuestCounterId": "",
+                "id": "6a32fdea9f52a4e1e7a4adff",
+                "index": 8,
+                "isEncoded": false,
+                "maxDurability": 100,
+                "minDurability": 0,
+                "onlyFoundInRaid": true,
+                "parentId": "",
+                "plantTime": 15,
+                "target": [
+                  "69d4460dbea349d22013f92e"
+                ],
+                "value": 1,
+                "visibilityConditions": [],
+                "zoneId": "doom_parts_dropoff_6"
+              }
+            ],
+            "id": "6a32fdf11a34868042f9fba5"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "6a32fdf631329014084305bd",
+          "index": 2,
+          "isNecessary": true,
+          "isResetOnConditionFailed": true,
+          "oneSessionOnly": true,
+          "parentId": "",
+          "type": "Completion",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "69dee91058127e349c05b923",
+          "index": 0,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5d1b2fa286f77425227d1674"
+          ],
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "69dee90d07b197cecb05b922",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "6389c70ca33d8c4cdf4932c6"
+          ],
+          "value": 3,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "69dee90b6256bf7e5605b921",
+          "index": 2,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "573477e124597737dd42e191"
+          ],
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "69dee88abe21fea00305b918",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "69ac519839d15e3196551ec7",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "availableInGameEditions": [],
+          "id": "69dee8a6a030d3fdca05b91e",
+          "index": 0,
+          "target": "5a7c2eca46aef81a7ca2145d",
+          "type": "TraderStanding",
+          "value": "0.04",
+          "unknown": false
+        },
+        {
+          "availableInGameEditions": [],
+          "id": "69ffac9ef26898d792f88ada",
+          "index": 1,
+          "type": "Experience",
+          "value": "6700",
+          "unknown": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "69d4460dbea349d22013f92e": {
+    "itemTplToClone": "5c12620d86f7743f8b198b72",
+    "parentId": "57864a66245977548f04a81f",
+    "handbookParentId": "5b47574386f77428ca22b2ef",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "quest_arcade_audio_board.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "DiscardingBlock": false,
+      "IsUndiscardable": false,
+      "QuestItem": false,
+      "Height": 2,
+      "Width": 1,
+      "Weight": 0.15
+    },
+    "locales": {
+      "en": {
+        "name": "Arcade Audio Board",
+        "shortName": "Audio",
+        "description": "A compact circuit board used in various audio device. It appears to handle signal routing, power regulation, and control logic for the unit’s sound system."
+      }
+    },
+    "addtoInventorySlots": [],
+    "addtoModSlots": false,
+    "modSlot": [
+      "mod_muzzle"
+    ],
+    "fleaPriceRoubles": 15599,
+    "handbookPriceRoubles": 9940,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "traders": {},
+    "staticLootContainers": [
+    ]
+  },
+  "69d446ec4c8a6357f213f931": {
+    "itemTplToClone": "5c12620d86f7743f8b198b72",
+    "parentId": "57864a66245977548f04a81f",
+    "handbookParentId": "5b47574386f77428ca22b2ef",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "quest_arcade_power_module.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "DiscardingBlock": false,
+      "IsUndiscardable": false,
+      "Height": 2,
+      "Width": 1,
+      "Weight": 0.15
+    },
+    "locales": {
+      "en": {
+        "name": "CRT Power Module",
+        "shortName": "PowerM",
+        "description": "Sealed high-voltage power module for CRT displays. Converts mains AC to the thousands of volts needed for cathode ray tube operation, with integrated transformers and safety fusing."
+      }
+    },
+    "addtoInventorySlots": [],
+    "addtoModSlots": false,
+    "modSlot": [
+      "mod_muzzle"
+    ],
+    "fleaPriceRoubles": 15599,
+    "handbookPriceRoubles": 9940,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "traders": {},
+    "staticLootContainers": [
+    ]
+  },
+  "69d446192add7ebebf13f92f": {
+    "itemTplToClone": "5c12620d86f7743f8b198b72",
+    "parentId": "57864a66245977548f04a81f",
+    "handbookParentId": "5b47574386f77428ca22b2ef",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "quest_arcade_mainboard.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "DiscardingBlock": false,
+      "IsUndiscardable": false,
+      "Height": 2,
+      "Width": 1,
+      "Weight": 0.15
+    },
+    "locales": {
+      "en": {
+        "name": "Arcade Logic Board",
+        "shortName": "Logic",
+        "description": "A multi-layer circuit assembly. It integrates core processing, memory, and interfacing components on densely packed boards specifically designed for vintage arcade cabinets."
+      }
+    },
+    "addtoInventorySlots": [],
+    "addtoModSlots": false,
+    "modSlot": [
+      "mod_muzzle"
+    ],
+    "fleaPriceRoubles": 15599,
+    "handbookPriceRoubles": 9940,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "traders": {},
+    "staticLootContainers": [
+    ]
+  }
+}

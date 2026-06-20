@@ -1,0 +1,34 @@
+{
+  "manifest": [
+    {
+      "key": "doomarcade.bundle",
+      "dependencyKeys": [
+        "shaders"
+      ]
+    },
+    {
+      "key": "staticcabinets.bundle",
+      "dependencyKeys": [
+        "shaders"
+      ]
+    },
+    {
+      "key": "quest_arcade_audio_board.bundle",
+      "dependencyKeys": [
+        "shaders"
+      ]
+    },
+    {
+      "key": "quest_arcade_mainboard.bundle",
+      "dependencyKeys": [
+        "shaders"
+      ]
+    },
+    {
+      "key": "quest_arcade_power_module.bundle",
+      "dependencyKeys": [
+        "shaders"
+      ]
+    }
+  ]
+}

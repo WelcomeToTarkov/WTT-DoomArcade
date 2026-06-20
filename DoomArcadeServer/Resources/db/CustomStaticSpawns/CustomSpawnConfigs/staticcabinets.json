@@ -1,0 +1,164 @@
+[
+  {
+    "questId": null,
+    "locationID": "Interchange",
+    "bundleName": "staticcabinets",
+    "prefabName": "Assets/DoomArcade/Arcade Machine Prefabs/Arcade Cabinet Space Invaders.prefab",
+    "position": {
+      "x": 90.440094,
+      "y": 21.5024452,
+      "z": -73.22689
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "requiredQuestStatuses": [],
+    "excludedQuestStatuses": [],
+    "questMustExist": false,
+    "linkedQuestId": null,
+    "linkedRequiredStatuses": [],
+    "linkedExcludedStatuses": [],
+    "linkedQuestMustExist": null,
+    "requiredItemInInventory": null,
+    "requiredLevel": null,
+    "requiredFaction": null,
+    "requiredBossSpawned": null
+  },
+  {
+    "questId": null,
+    "locationID": "Interchange",
+    "bundleName": "staticcabinets",
+    "prefabName": "Assets/DoomArcade/Arcade Machine Prefabs/Arcade Cabinet Galaga.prefab",
+    "position": {
+      "x": 88.62821,
+      "y": 21.5171337,
+      "z": -70.2486954
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 92.294075,
+      "z": 0.0
+    },
+    "requiredQuestStatuses": [],
+    "excludedQuestStatuses": [],
+    "questMustExist": false,
+    "linkedQuestId": null,
+    "linkedRequiredStatuses": [],
+    "linkedExcludedStatuses": [],
+    "linkedQuestMustExist": null,
+    "requiredItemInInventory": null,
+    "requiredLevel": null,
+    "requiredFaction": null,
+    "requiredBossSpawned": null
+  },
+  {
+    "questId": null,
+    "locationID": "Interchange",
+    "bundleName": "staticcabinets",
+    "prefabName": "Assets/DoomArcade/Arcade Machine Prefabs/Arcade Cabinet Atari Generic.prefab",
+    "position": {
+      "x": 88.33978,
+      "y": 21.485218,
+      "z": -278.623962
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "requiredQuestStatuses": [],
+    "excludedQuestStatuses": [],
+    "questMustExist": false,
+    "linkedQuestId": null,
+    "linkedRequiredStatuses": [],
+    "linkedExcludedStatuses": [],
+    "linkedQuestMustExist": null,
+    "requiredItemInInventory": null,
+    "requiredLevel": null,
+    "requiredFaction": null,
+    "requiredBossSpawned": null
+  },
+  {
+    "questId": null,
+    "locationID": "Interchange",
+    "bundleName": "staticcabinets",
+    "prefabName": "Assets/DoomArcade/Arcade Machine Prefabs/Arcade Cabinet Contra.prefab",
+    "position": {
+      "x": 83.11159,
+      "y": 21.4272137,
+      "z": 72.88978
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "requiredQuestStatuses": [],
+    "excludedQuestStatuses": [],
+    "questMustExist": false,
+    "linkedQuestId": null,
+    "linkedRequiredStatuses": [],
+    "linkedExcludedStatuses": [],
+    "linkedQuestMustExist": null,
+    "requiredItemInInventory": null,
+    "requiredLevel": null,
+    "requiredFaction": null,
+    "requiredBossSpawned": null
+  },
+  {
+    "questId": null,
+    "locationID": "Interchange",
+    "bundleName": "staticcabinets",
+    "prefabName": "Assets/DoomArcade/Arcade Machine Prefabs/Arcade Cabinet Doom.prefab",
+    "position": {
+      "x": 98.74093,
+      "y": 36.582653,
+      "z": 35.3704834
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 268.801178,
+      "z": 0.0
+    },
+    "requiredQuestStatuses": [],
+    "excludedQuestStatuses": [],
+    "questMustExist": false,
+    "linkedQuestId": null,
+    "linkedRequiredStatuses": [],
+    "linkedExcludedStatuses": [],
+    "linkedQuestMustExist": null,
+    "requiredItemInInventory": null,
+    "requiredLevel": null,
+    "requiredFaction": null,
+    "requiredBossSpawned": null
+  },
+  {
+    "questId": null,
+    "locationID": "Interchange",
+    "bundleName": "staticcabinets",
+    "prefabName": "Assets/DoomArcade/Arcade Machine Prefabs/Arcade Cabinet Mortal Kombat II.prefab",
+    "position": {
+      "x": 88.60469,
+      "y": 21.5166531,
+      "z": -66.4916458
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 89.48999,
+      "z": 0.0
+    },
+    "requiredQuestStatuses": [],
+    "excludedQuestStatuses": [],
+    "questMustExist": false,
+    "linkedQuestId": null,
+    "linkedRequiredStatuses": [],
+    "linkedExcludedStatuses": [],
+    "linkedQuestMustExist": null,
+    "requiredItemInInventory": null,
+    "requiredLevel": null,
+    "requiredFaction": null,
+    "requiredBossSpawned": null
+  }
+]
