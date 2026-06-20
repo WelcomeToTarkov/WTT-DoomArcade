@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.idea/.idea.DoomArcade/.idea
+/.vs/DoomArcade
+/Build/
+/DoomArcadeServer/bin
+/DoomArcadeServer/obj
+/DoomArcadeClient/SPTClientModExamples.sln.DotSettings.user
+*.user
