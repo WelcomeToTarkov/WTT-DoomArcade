@@ -24,7 +24,6 @@ internal class GetConditionHandlersByZonePatch : ModulePatch
         ref IEnumerable<ConditionProgressChecker> __result)
         where T : ConditionZone
     {
-        // If vanilla found something, don’t change behavior
         if (__result != null && __result.Any())
             return;
 

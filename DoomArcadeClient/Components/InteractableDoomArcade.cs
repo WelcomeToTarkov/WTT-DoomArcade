@@ -1,5 +1,4 @@
-﻿// DoomArcade_Client/Scripts/InteractableDoomArcade.cs
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using BepInEx.Logging;
 using DoomArcade.Scripts.Tarkov;
 using DoomArcadeClient.Utils;
