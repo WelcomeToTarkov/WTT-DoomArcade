@@ -1,7 +1,5 @@
-﻿using System.Linq;
-using System.Reflection;
+﻿using System.Reflection;
 using EFT.UI;
-using SPT.Reflection.Utils;
 using UnityEngine;
 
 namespace DoomArcadeClient.Utils
@@ -13,22 +11,31 @@ namespace DoomArcadeClient.Utils
 
         static CursorSettings()
         {
-            var cursorType = PatchConstants.EftTypes.Single(x => x.GetMethod("SetCursor") != null);
+            var cursorType = typeof(CursorSwitcher);
 
-            SetCursorMethod = cursorType.GetMethod("SetCursor");
-            SetCursorLockMethod = cursorType.GetMethod("SetCursorLockMode");
+            SetCursorMethod = cursorType.GetMethod(
+                nameof(CursorSwitcher.SetCursor),
+                BindingFlags.Public | BindingFlags.Static,
+                null,
+                new[] { typeof(ECursorType) },
+                null);
 
+            SetCursorLockMethod = cursorType.GetMethod(
+                nameof(CursorSwitcher.SetCursorLockMode),
+                BindingFlags.Public | BindingFlags.Static,
+                null,
+                new[] { typeof(bool), typeof(FullScreenMode) },
+                null);
         }
 
         public static void SetCursor(ECursorType type)
         {
-            SetCursorMethod.Invoke(null, new object[] { type });
+            SetCursorMethod?.Invoke(null, new object[] { type });
         }
 
         public static void SetCursorLockMode(bool visible, FullScreenMode fullscreenMode)
         {
-            SetCursorLockMethod.Invoke(null, new object[] { visible, fullscreenMode });
+            SetCursorLockMethod?.Invoke(null, new object[] { visible, fullscreenMode });
         }
-
     }
 }

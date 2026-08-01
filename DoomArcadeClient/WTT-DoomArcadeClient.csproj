@@ -4,7 +4,7 @@
     <Description>DoomArcadeClient</Description>
     <AssemblyVersion>$(Version)</AssemblyVersion>
     <FileVersion>$(Version)</FileVersion>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <Authors>GrooveypenguinX</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -135,7 +135,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="WTT-ClientCommonLib" Version="2.0.15" />
+    <PackageReference Include="WTT-ClientCommonLib" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>

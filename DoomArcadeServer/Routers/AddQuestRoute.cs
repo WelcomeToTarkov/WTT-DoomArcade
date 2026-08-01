@@ -23,7 +23,7 @@ public class DoomQuestRouter(
     JsonUtil jsonUtil
 ) : StaticRouter(jsonUtil, [
     new RouteAction<DoomQuestStartData>("/WTT/WTTDoomQuestStart",
-        async (_, info, sessionId, _) =>
+        async (_, info, sessionId, _, _) =>
         {
             return await callbacks.StartQuest(sessionId, info?.Data);
         })

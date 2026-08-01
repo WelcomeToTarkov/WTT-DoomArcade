@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Reflection;
-using DoomArcadeClient;
+﻿using DoomArcadeClient;
 using DoomArcadeClient.Components;
+using EFT;
+using EFT.UI;
 using HarmonyLib;
 using SPT.Reflection.Patching;
+using System.Collections.Generic;
+using System.Reflection;
 
 namespace DoomArcadeClient.Patches;
 
@@ -11,23 +13,23 @@ internal class GetAvailableActionsPatch : ModulePatch
 {
     protected override MethodBase GetTargetMethod()
     {
-        return AccessTools.FirstMethod(typeof(GetActionsClass),
-            x => x.Name == nameof(GetActionsClass.GetAvailableActions) && x.GetParameters()[0].Name == "owner");
+        return AccessTools.FirstMethod(typeof(InteractionContextHelper),
+            x => x.Name == nameof(InteractionContextHelper.GetAvailableActions) && x.GetParameters()[0].Name == "owner");
     }
 
     [PatchPrefix]
-    public static bool PatchPrefix(object[] __args, ref ActionsReturnClass __result)
+    public static bool PatchPrefix(object[] __args, ref AvailableInteractionState __result)
     {
         var interactive = __args[1];
         if (interactive is InteractableDoomArcade arcade)
         {
             if (arcade.IsPoweredOn)
             {
-                __result = new ActionsReturnClass { Actions = new List<ActionsTypesClass>() };
+                __result = new AvailableInteractionState { Actions = new List<InteractionAction>() };
                 return false;
             }
 
-            var actions = new List<ActionsTypesClass>
+            var actions = new List<InteractionAction>
             {
                 new()
                 {
@@ -39,7 +41,7 @@ internal class GetAvailableActionsPatch : ModulePatch
                 }
             };
 
-            __result = new ActionsReturnClass { Actions = actions };
+            __result = new AvailableInteractionState { Actions = actions };
             return false;
         }
         return true;

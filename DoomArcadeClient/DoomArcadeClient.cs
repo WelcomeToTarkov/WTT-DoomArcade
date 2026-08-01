@@ -11,7 +11,7 @@ using WTTClientCommonLib.Patches;
 
 namespace DoomArcadeClient
 {
-    [BepInPlugin("com.wtt.doomarcade", "DoomArcadeClient", "1.0.0")]
+    [BepInPlugin("com.wtt.doomarcade", "DoomArcadeClient", "1.1.0")]
     public class DoomArcadeClient : BaseUnityPlugin
     {
         internal static ManualLogSource Log;

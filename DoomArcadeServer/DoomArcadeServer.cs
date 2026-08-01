@@ -7,30 +7,30 @@ using Range = SemanticVersioning.Range;
 
 namespace WTTExampleMod;
 
-public record ModMetadata : AbstractModMetadata
+public record ModMetadata : IModMetadata
 {
-    public override string ModGuid { get; init; } = "com.wtt.doomarcade";
-    public override string Name { get; init; } = "WTT-DoomArcadeServer";
-    public override string Author { get; init; } = "GrooveypenguinX";
-    public override List<string>? Contributors { get; init; } = null;
-    public override SemanticVersioning.Version Version { get; init; } = new(typeof(ModMetadata).Assembly.GetName().Version?.ToString(3));
-    public override Range SptVersion { get; init; } = new("~4.0.13");
-    public override List<string>? Incompatibilities { get; init; }
-    public override Dictionary<string, Range>? ModDependencies { get; init; } = new()
+    public string ModGuid { get; init; } = "com.wtt.doomarcade";
+    public string Name { get; init; } = "WTT-DoomArcadeServer";
+    public string Author { get; init; } = "GrooveypenguinX";
+    public List<string>? Contributors { get; init; } = null;
+    public SemanticVersioning.Version Version { get; init; } = new(typeof(ModMetadata).Assembly.GetName().Version?.ToString(3));
+    public Range SptVersion { get; init; } = new("~4.1.0");
+    public List<string>? Incompatibilities { get; init; }
+    public Dictionary<string, Range>? ModDependencies { get; init; } = new()
     {
-        { "com.wtt.commonlib", new Range("~2.0.23") }
+        { "com.wtt.commonlib", new Range("~3.0.0") }
     };
-    public override string? Url { get; init; }
-    public override bool? IsBundleMod { get; init; } = true;
-    public override string License { get; init; } = "MIT";
+    public string? Url { get; init; }
+    public bool HasPrepatcher { get; init; } = false;
+    public string License { get; init; } = "MIT";
 }
 
 
-[Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 2)]
+[Injectable(TypePriority = OnLoadOrder.Preload + 2)]
 public class DoomArcadeServer(
     WTTServerCommonLib.WTTServerCommonLib wttCommon) : IOnLoad
 {
-    public async Task OnLoad()
+    public async Task OnLoadAsync(CancellationToken cancellationToken)
     {
         Assembly assembly = Assembly.GetExecutingAssembly();
         await wttCommon.CustomQuestService.CreateCustomQuests(assembly);
@@ -38,6 +38,5 @@ public class DoomArcadeServer(
         await wttCommon.CustomLocaleService.CreateCustomLocales(assembly);
         await wttCommon.CustomStaticSpawnService.CreateCustomStaticSpawns(assembly);
         await wttCommon.CustomItemServiceExtended.CreateCustomItems(assembly);
-        await Task.CompletedTask;
     }
 }
