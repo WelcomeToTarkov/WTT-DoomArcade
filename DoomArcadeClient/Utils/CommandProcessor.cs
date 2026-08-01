@@ -35,22 +35,22 @@ public class CommandProcessor
 
 public class AdvancedConsoleCommands
 {
-    [ConsoleCommand("spawnarcade", "Spawn arcade cabinet in front of player")]
-    public static void SpawnArcade()
-    {
-        if (DoomArcadeClient.Player == null)
-        {
-            ConsoleScreen.LogError("No player found. Must be in raid.");
-            return;
-        }
+    //[ConsoleCommand("spawnarcade", "Spawn arcade cabinet in front of player")]
+    //public static void SpawnArcade()
+    //{
+    //    if (DoomArcadeClient.Player == null)
+    //    {
+    //        ConsoleScreen.LogError("No player found. Must be in raid.");
+    //        return;
+    //    }
 
-        var playerPos = DoomArcadeClient.Player.Position;
-        var forward = DoomArcadeClient.Player.LookDirection;
-        var spawnPos = playerPos + forward * 5f;
-        var spawnRot = Quaternion.Euler(180f, -90f, 0f);
+    //    var playerPos = DoomArcadeClient.Player.Position;
+    //    var forward = DoomArcadeClient.Player.LookDirection;
+    //    var spawnPos = playerPos + forward * 5f;
+    //    var spawnRot = Quaternion.Euler(180f, -90f, 0f);
 
-        SpawnArcade(spawnPos, spawnRot);
-    }
+    //    SpawnArcade(spawnPos, spawnRot);
+    //}
 
     public static void SpawnArcade(Vector3 spawnPos, Quaternion spawnRot)
     {
@@ -71,8 +71,6 @@ public class AdvancedConsoleCommands
 
         try
         {
-            ConsoleScreen.Log("Spawning Cabinet...");
-
             var prefab = CommandProcessor.AssetLoader.LoadPrefabFromBundle(BUNDLE_NAME, PREFAB_PATH);
             if (prefab == null)
             {

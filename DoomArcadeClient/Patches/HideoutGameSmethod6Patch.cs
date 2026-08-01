@@ -59,10 +59,6 @@ public class HideoutGameSmethod6Patch : ModulePatch
         var match = profile.QuestsData.FirstOrDefault(q => q.Id == DoomQuestChainEnd);
         if (match == null)
             return false;
-
-        DoomArcadeClient.Log?.LogInfo(
-            $"[HideoutGameSmethod6Patch] Found quest {DoomQuestChainEnd} with Status={match.Status}");
-
         return match.Status >= EQuestStatus.Success;
     }
 
@@ -81,8 +77,6 @@ public class HideoutGameSmethod6Patch : ModulePatch
 
         try
         {
-            ConsoleScreen.Log("Spawning Cabinet...");
-
             var prefab = assetLoader.LoadPrefabFromBundle(BUNDLE_NAME, PREFAB_PATH);
             if (prefab == null)
             {

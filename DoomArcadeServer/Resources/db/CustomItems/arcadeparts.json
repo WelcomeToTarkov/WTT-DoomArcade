@@ -30,6 +30,7 @@
     ],
     "fleaPriceRoubles": 15599,
     "handbookPriceRoubles": 9940,
+    "addtoItemBlacklist": true,
     "addtoTraders": false,
     "addtoBots": false,
     "addtoStaticLootContainers": false,
@@ -69,6 +70,7 @@
     "handbookPriceRoubles": 9940,
     "addtoTraders": false,
     "addtoBots": false,
+    "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "traders": {},
     "staticLootContainers": [
@@ -106,6 +108,7 @@
     "handbookPriceRoubles": 9940,
     "addtoTraders": false,
     "addtoBots": false,
+    "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "traders": {},
     "staticLootContainers": [

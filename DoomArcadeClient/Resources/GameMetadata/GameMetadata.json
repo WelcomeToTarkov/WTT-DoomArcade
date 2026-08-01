@@ -1,0 +1,66 @@
+{
+    "gameMetas": [
+      {
+        "wadFileName": "DOOM.WAD",
+        "previewImage": "doom.png",
+        "displayName": "DOOM (1993)",
+        "description": "Classic Doom: Tech-base invasion to Hell across 3 episodes. Tight corridors, key hunts, and demon hordes in the original 1993 FPS."
+      },
+      {
+        "wadFileName": "DOOM1.WAD",
+        "previewImage": "doom.png",
+        "displayName": "DOOM Shareware – Episode 1",
+        "description": "Doom Shareware: Free episode 1 only (Knee-Deep in the Dead). Perfect intro to Doom's fast combat and maze exploration."
+      },
+      {
+        "wadFileName": "ULTIMATE.WAD",
+        "previewImage": "ultimate.png",
+        "displayName": "The Ultimate DOOM",
+        "description": "The Ultimate Doom: Original Doom + bonus episode 4 'Thy Flesh Consumed.' Shorter, deadlier maps for veterans."
+      },
+      {
+        "wadFileName": "DOOM2.WAD",
+        "previewImage": "doom2.png",
+        "displayName": "DOOM II: Hell on Earth",
+        "description": "Doom II: Hell on Earth. Super shotgun debuts alongside revenants and arch-viles in a 32-map Hell invasion."
+      },
+      {
+        "wadFileName": "TNT.WAD",
+        "previewImage": "tnt.jpg",
+        "displayName": "Final DOOM: TNT - Evilution",
+        "description": "Final Doom: TNT Evilution. TeamTNT's 32 structured maps from marine base to fiery Hell finale."
+      },
+      {
+        "wadFileName": "PLUTONIA.WAD",
+        "previewImage": "plutonia.jpg",
+        "displayName": "Final DOOM: The Plutonia Experiment",
+        "description": "Final Doom: Plutonia Experiment. 32 brutal slaughter maps heavy on chaingunners and tight fights."
+      },
+      {
+        "wadFileName": "NERVE.WAD",
+        "previewImage": "nerve.jpg",
+        "displayName": "DOOM II: No Rest for the Living",
+        "description": "No Rest for the Living: 9 dense Doom II maps from the XBLA era. Modern layouts with classic vanilla rules."
+      },
+      {
+        "wadFileName": "TARKOV.WAD",
+        "previewImage": "tarkov.jpg",
+        "displayName": "Tarkov: Factory of Doom",
+        "description": "Tarkov Factory of Doom. Scavs roaming the industrial factory, while evil Tagilla lurks in the shadows. Are you Chad enough to make it to extract?"
+      },
+      {
+        "wadFileName": "AODDOOM2.WAD",
+        "previewImage": "aoddoom2.jpg",
+        "displayName": "Army of Darkness Doom II",
+        "description": "Army of Darkness Doom II. Groovy boomstick action and chainsaw mayhem in a Doom II total conversion.",
+        "iwadFileName": "DOOM2.WAD",
+        "pwadFileNames": [
+          "AODDOOM2.WAD"
+        ],
+        "dehFileNames": [
+          "AODDOOM2.DEH"
+        ]
+      }
+    ]
+  }
+  

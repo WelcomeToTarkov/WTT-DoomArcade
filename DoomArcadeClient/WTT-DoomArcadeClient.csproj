@@ -4,7 +4,7 @@
     <Description>DoomArcadeClient</Description>
     <AssemblyVersion>$(Version)</AssemblyVersion>
     <FileVersion>$(Version)</FileVersion>
-    <Version>0.0.2</Version>
+    <Version>1.0.0</Version>
     <Authors>GrooveypenguinX</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -30,12 +30,12 @@
     <DebugType>none</DebugType>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="build\**"/>
-    <Compile Remove="Interfaces\**"/>
-    <EmbeddedResource Remove="build\**"/>
-    <EmbeddedResource Remove="Interfaces\**"/>
-    <None Remove="build\**"/>
-    <None Remove="Interfaces\**"/>
+    <Compile Remove="build\**" />
+    <Compile Remove="Interfaces\**" />
+    <EmbeddedResource Remove="build\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <None Remove="build\**" />
+    <None Remove="Interfaces\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -138,8 +138,12 @@
     <PackageReference Include="WTT-ClientCommonLib" Version="2.0.15" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="@echo off&#xA;setlocal enabledelayedexpansion&#xA;&#xA;REM Set variables&#xA;set MODNAME=$(TargetName)&#xA;set DLLPATH=$(TargetDir)$(TargetName).dll&#xA;set OUTDIR=..\..\..\BepInEx\plugins\%MODNAME%&#xA;set BUILDOUTDIR=..\Build\BepInEx\plugins\%MODNAME%&#xA;&#xA;REM Create output directories if they don't exist&#xA;if not exist &quot;%OUTDIR%&quot; mkdir &quot;%OUTDIR%&quot;&#xA;if not exist &quot;%BUILDOUTDIR%&quot; mkdir &quot;%BUILDOUTDIR%&quot;&#xA;&#xA;REM Copy the DLL to BepInEx plugins directory&#xA;copy /Y &quot;%DLLPATH%&quot; &quot;%OUTDIR%\&quot; &gt;nul 2&gt;&amp;1&#xA;echo [PostBuild] Copied %MODNAME%.dll to %OUTDIR%&#xA;&#xA;REM Copy the DLL to Build/BepInEx plugins directory&#xA;copy /Y &quot;%DLLPATH%&quot; &quot;%BUILDOUTDIR%\&quot; &gt;nul 2&gt;&amp;1&#xA;echo [PostBuild] Copied %MODNAME%.dll to %BUILDOUTDIR%&#xA;&#xA;&#xA;echo [PostBuild] BepInEx build output: %OUTDIR% and %BUILDOUTDIR%&#xA;&#xA;&#xA;endlocal&#xA;" />
+    <Exec Command="@echo off&#xA;setlocal enabledelayedexpansion&#xA;&#xA;REM Set variables&#xA;set MODNAME=$(TargetName)&#xA;set DLLPATH=$(TargetDir)$(TargetName).dll&#xA;set OUTDIR=..\..\..\BepInEx\plugins\%25MODNAME%25&#xA;set RESOURCESDIR=$(ProjectDir)Resources&#xA;set BUILDOUTDIR=..\Build\BepInEx\plugins\%25MODNAME%25&#xA;&#xA;REM Create output directories if they don't exist&#xA;if not exist &quot;%25OUTDIR%25&quot; mkdir &quot;%25OUTDIR%25&quot;&#xA;if not exist &quot;%25BUILDOUTDIR%25&quot; mkdir &quot;%25BUILDOUTDIR%25&quot;&#xA;&#xA;REM Copy the DLL to BepInEx plugins directory&#xA;copy /Y &quot;%25DLLPATH%25&quot; &quot;%25OUTDIR%25\&quot; &gt;nul 2&gt;&amp;1&#xA;echo [PostBuild] Copied %25MODNAME%25.dll to %25OUTDIR%25&#xA;&#xA;REM Copy all contents from Resources folder recursively to BepInEx plugins folder&#xA;if exist &quot;%25RESOURCESDIR%25&quot; (&#xA;    xcopy &quot;%25RESOURCESDIR%25&quot; &quot;%25OUTDIR%25&quot; /E /I /Y &gt;nul 2&gt;&amp;1&#xA;    echo [PostBuild] Copied Resources to %25OUTDIR%25&#xA;) else (&#xA;    echo [PostBuild] Warning: Resources folder not found at %25RESOURCESDIR%25&#xA;)&#xA;&#xA;REM Copy the DLL to Build/BepInEx plugins directory&#xA;copy /Y &quot;%25DLLPATH%25&quot; &quot;%25BUILDOUTDIR%25\&quot; &gt;nul 2&gt;&amp;1&#xA;echo [PostBuild] Copied %25MODNAME%25.dll to %25BUILDOUTDIR%25&#xA;&#xA;REM Copy all contents from Resources folder recursively to Build folder&#xA;if exist &quot;%25RESOURCESDIR%25&quot; (&#xA;    xcopy &quot;%25RESOURCESDIR%25&quot; &quot;%25BUILDOUTDIR%25&quot; /E /I /Y &gt;nul 2&gt;&amp;1&#xA;    echo [PostBuild] Copied Resources to %25BUILDOUTDIR%25&#xA;) else (&#xA;    echo [PostBuild] Warning: Resources folder not found at %25RESOURCESDIR%25&#xA;)&#xA;&#xA;echo [PostBuild] BepInEx build output: %25OUTDIR%25 and %25BUILDOUTDIR%25&#xA;endlocal&#xA;" />
   </Target>
 
 

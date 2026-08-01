@@ -13,10 +13,8 @@ namespace DoomArcadeClient.Patches;
 
 public class UpdateSingleQuestVisibilityPatch : ModulePatch
 {
-    private const EAreaType WallAreaType = EAreaType.EmergencyWall;
     private const int WallFinalLevel = 6;
     private const string DoomQuestChainStart = "69ac519839d15e3196551ec7";
-    private static bool requestedQuestStart = false;
 
     protected override MethodBase GetTargetMethod()
     {
@@ -42,28 +40,22 @@ public class UpdateSingleQuestVisibilityPatch : ModulePatch
         var profile = backendSession?.Profile;
         if (profile == null)
         {
-            DoomArcadeClient.Log?.LogWarning("[DefectiveWallQuestUnlockPatch] Profile is null");
+            DoomArcadeClient.Log?.LogWarning("Profile is null");
             return;
         }
-
-        DoomArcadeClient.Log?.LogInfo(
-            $"[DefectiveWallQuestUnlockPatch] Profile: {profile.Nickname} ({profile.Id})");
 
         if (!HasWallQuestUnlocked(profile))
         {
             var hideout = profile.Hideout;
             if (hideout?.Areas == null || hideout.Areas.Length == 0)
             {
-                DoomArcadeClient.Log?.LogWarning("[DefectiveWallQuestUnlockPatch] Hideout or Areas array is null/empty");
+                DoomArcadeClient.Log?.LogWarning("Hideout or Areas array is null/empty");
                 return;
             }
 
             var wallArea = hideout.Areas.FirstOrDefault(a => a != null && a.Type == 22);
             if (wallArea != null && wallArea.Level == WallFinalLevel)
             {
-                DoomArcadeClient.Log?.LogInfo(
-                    "[DefectiveWallQuestUnlockPatch] Wall is fully deconstructed, proceeding to unlock quest");
-
                 RequestDoomQuestStart();
                 questView.Quest.QuestStatus = EQuestStatus.AvailableForStart;
                 questView.gameObject.SetActive(true);
@@ -82,9 +74,6 @@ public class UpdateSingleQuestVisibilityPatch : ModulePatch
         if (match == null)
             return false;
 
-        DoomArcadeClient.Log?.LogInfo(
-            $"[DefectiveWallQuestUnlockPatch] Found quest {DoomQuestChainStart} with Status={match.Status}");
-
         return match.Status >= EQuestStatus.AvailableForStart;
     }
 
@@ -92,26 +81,14 @@ public class UpdateSingleQuestVisibilityPatch : ModulePatch
     {
         try
         {
-            DoomArcadeClient.Log?.LogInfo(
-                $"[DefectiveWallQuestUnlockPatch] Requesting server to add quest '{DoomQuestChainStart}'");
 
             var response = WebRequestUtils.Post<string>("/WTT/WTTDoomQuestStart", DoomQuestChainStart);
 
-            if (response != null)
-            {
-                DoomArcadeClient.Log?.LogInfo(
-                    $"[DefectiveWallQuestUnlockPatch] Server response from /WTT/WTTDoomQuestStart: {response}");
-            }
-            else
-            {
-                DoomArcadeClient.Log?.LogWarning(
-                    "[DefectiveWallQuestUnlockPatch] /WTT/WTTDoomQuestStart returned null response");
-            }
         }
         catch (Exception ex)
         {
             DoomArcadeClient.Log?.LogError(
-                $"[DefectiveWallQuestUnlockPatch] Exception while calling /WTT/WTTDoomQuestStart: {ex}");
+                $"Exception while calling /WTT/WTTDoomQuestStart: {ex}");
         }
     }
 }

@@ -46,8 +46,9 @@
                 "isEncoded": false,
                 "maxDurability": 100,
                 "minDurability": 0,
+                "isNecessary": true,
                 "onlyFoundInRaid": false,
-                "parentId": "",
+                "parentId": "6a050718b79a994add4fba60",
                 "plantTime": 10,
                 "target": [
                   "590c2e1186f77425357b6124"
@@ -64,6 +65,7 @@
                 "isEncoded": false,
                 "maxDurability": 100,
                 "minDurability": 0,
+                "isNecessary": true,
                 "onlyFoundInRaid": true,
                 "target": [
                   "69d446192add7ebebf13f92f"
@@ -72,14 +74,14 @@
                 "zoneId": "doom_parts_dropoff_1",
                 "globalQuestCounterId": "",
                 "index": 4,
-                "parentId": "",
+                "parentId": "6a050718b79a994add4fba60",
                 "plantTime": 15,
                 "visibilityConditions": []
               }
             ],
             "id": "6a05070957f6bfff77292afc"
           },
-          "doNotResetIfCounterCompleted": false,
+          "doNotResetIfCounterCompleted": true,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "6a050718b79a994add4fba60",
@@ -178,8 +180,9 @@
                 "isEncoded": false,
                 "maxDurability": 100,
                 "minDurability": 0,
+                "isNecessary": true,
                 "onlyFoundInRaid": false,
-                "parentId": "",
+                "parentId": "6a32fef733dd52c8b3e32590",
                 "plantTime": 10,
                 "target": [
                   "590c2e1186f77425357b6124"
@@ -198,8 +201,9 @@
                 "isEncoded": false,
                 "maxDurability": 100,
                 "minDurability": 0,
+                "isNecessary": true,
                 "onlyFoundInRaid": true,
-                "parentId": "",
+                "parentId": "6a32fef733dd52c8b3e32590",
                 "plantTime": 15,
                 "target": [
                   "69d446ec4c8a6357f213f931"
@@ -211,7 +215,7 @@
             ],
             "id": "6a32feee33b0f47ab784052e"
           },
-          "doNotResetIfCounterCompleted": false,
+          "doNotResetIfCounterCompleted": true,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "6a32fef733dd52c8b3e32590",
@@ -239,8 +243,9 @@
                 "isEncoded": false,
                 "maxDurability": 100,
                 "minDurability": 0,
+                "isNecessary": true,
                 "onlyFoundInRaid": false,
-                "parentId": "",
+                "parentId": "6a32ff052ada360cff2cd825",
                 "plantTime": 10,
                 "target": [
                   "590c2e1186f77425357b6124"
@@ -259,8 +264,9 @@
                 "isEncoded": false,
                 "maxDurability": 100,
                 "minDurability": 0,
+                "isNecessary": true,
                 "onlyFoundInRaid": true,
-                "parentId": "",
+                "parentId": "6a32ff052ada360cff2cd825",
                 "plantTime": 15,
                 "target": [
                   "69d4460dbea349d22013f92e"
@@ -272,7 +278,7 @@
             ],
             "id": "6a32ff05771c3beb14c8ed6f"
           },
-          "doNotResetIfCounterCompleted": false,
+          "doNotResetIfCounterCompleted": true,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "6a32ff052ada360cff2cd825",
@@ -526,7 +532,8 @@
                 "maxDurability": 100,
                 "minDurability": 0,
                 "onlyFoundInRaid": false,
-                "parentId": "",
+                "isNecessary": true,
+                "parentId": "6a32fdcfe9adb3f4358f3d72",
                 "plantTime": 10,
                 "target": [
                   "590c2e1186f77425357b6124"
@@ -546,7 +553,8 @@
                 "maxDurability": 100,
                 "minDurability": 0,
                 "onlyFoundInRaid": true,
-                "parentId": "",
+                "isNecessary": true,
+                "parentId": "6a32fdcfe9adb3f4358f3d72",
                 "plantTime": 15,
                 "target": [
                   "69d446192add7ebebf13f92f"
@@ -558,7 +566,7 @@
             ],
             "id": "6a32fdcebecf1b3067a5fbb6"
           },
-          "doNotResetIfCounterCompleted": false,
+          "doNotResetIfCounterCompleted": true,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "6a32fdcfe9adb3f4358f3d72",
@@ -587,7 +595,8 @@
                 "maxDurability": 100,
                 "minDurability": 0,
                 "onlyFoundInRaid": false,
-                "parentId": "",
+                "isNecessary": true,
+                "parentId": "6a32fde327fc02ee211f2d7f",
                 "plantTime": 10,
                 "target": [
                   "590c2e1186f77425357b6124"
@@ -607,7 +616,8 @@
                 "maxDurability": 100,
                 "minDurability": 0,
                 "onlyFoundInRaid": true,
-                "parentId": "",
+                "isNecessary": true,
+                "parentId": "6a32fde327fc02ee211f2d7f",
                 "plantTime": 15,
                 "target": [
                   "69d446ec4c8a6357f213f931"
@@ -619,7 +629,7 @@
             ],
             "id": "6a32fde1d178d417d241b34c"
           },
-          "doNotResetIfCounterCompleted": false,
+          "doNotResetIfCounterCompleted": true,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "6a32fde327fc02ee211f2d7f",
@@ -648,7 +658,8 @@
                 "maxDurability": 100,
                 "minDurability": 0,
                 "onlyFoundInRaid": false,
-                "parentId": "",
+                "isNecessary": true,
+                "parentId": "6a32fdf631329014084305bd",
                 "plantTime": 10,
                 "target": [
                   "590c2e1186f77425357b6124"
@@ -668,7 +679,8 @@
                 "maxDurability": 100,
                 "minDurability": 0,
                 "onlyFoundInRaid": true,
-                "parentId": "",
+                "isNecessary": true,
+                "parentId": "6a32fdf631329014084305bd",
                 "plantTime": 15,
                 "target": [
                   "69d4460dbea349d22013f92e"
@@ -680,7 +692,7 @@
             ],
             "id": "6a32fdf11a34868042f9fba5"
           },
-          "doNotResetIfCounterCompleted": false,
+          "doNotResetIfCounterCompleted": true,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "6a32fdf631329014084305bd",

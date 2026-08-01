@@ -31,10 +31,9 @@ internal class GetAvailableActionsPatch : ModulePatch
             {
                 new()
                 {
-                    Name = "Turn On Arcade",
+                    Name = "TURN_ON_ARCADE".Localized(null),
                     Action = () =>
                     {
-                        DoomArcadeClient.Log?.LogInfo("[ArcadeClient] 'Turn On Arcade' invoked → unityInteractable.PowerOnArcade()");
                         arcade.PowerOnFromInteraction();
                     }
                 }
