@@ -18,7 +18,7 @@ public record ModMetadata : IModMetadata
     public List<string>? Incompatibilities { get; init; }
     public Dictionary<string, Range>? ModDependencies { get; init; } = new()
     {
-        { "com.wtt.commonlib", new Range("~3.0.0") }
+        { "com.wtt.commonlib", new Range("~3.0.1") }
     };
     public string? Url { get; init; }
     public bool HasPrepatcher { get; init; } = false;
